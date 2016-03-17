@@ -5,9 +5,14 @@
         "token": ""
     },
     "smtp": {
-        "addr": "mail.example.com:25",
-        "username": "falcon@example.com",
-        "password": "123456",
-        "from": "falcon@example.com"
+        "addr": "smtp.mxhichina.com:25",
+        "username": "aoe_monitor@klabchina.net",
+        "password": "Klabchina2016",
+        "from": "aoe_monitor@klabchina.net"
+    },
+    "slack": {
+        "token": "xoxb-27268754291-ZSOgFyUrYsLcblCcA1G3ICqI",
+        "username": "alert_aoezhcn",
+        "channel": "#pj-aoe-zhs-alert"
     }
 }

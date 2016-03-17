@@ -21,10 +21,17 @@ type SmtpConfig struct {
 	From     string `json:"from"`
 }
 
+type SlackConfig struct {
+	Token    string `json:"token"`
+	Username string `json:"username"`
+	Channel  string `json:"channel"`
+}
+
 type GlobalConfig struct {
-	Debug bool        `json:"debug"`
-	Http  *HttpConfig `json:"http"`
-	Smtp  *SmtpConfig `json:"smtp"`
+	Debug bool         `json:"debug"`
+	Http  *HttpConfig  `json:"http"`
+	Smtp  *SmtpConfig  `json:"smtp"`
+	Slack *SlackConfig `json:"slack"`
 }
 
 var (
