@@ -25,10 +25,10 @@ func configProcRoutes() {
 		api := slack.New(cfg.Slack.Token)
 		params := slack.PostMessageParameters{Username: cfg.Slack.Username, AsUser: true}
 		attachment := slack.Attachment{
-			Pretext: "Alert information for AOE WEB!",
+			Pretext: "Alarm that pop from open falcon",
 			Color:   "#e11818",
 			Text:    content,
-			Title:   "Error log from AOE",
+			Title:   "Alarm something",
 			Fields:  []slack.AttachmentField{slack.AttachmentField{Title: "Priority", Value: "High", Short: false}},
 		}
 		params.Attachments = []slack.Attachment{attachment}
